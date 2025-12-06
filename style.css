@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#ECA427;
+}
+header{
+    /* height: 20vh; */
+    width: 100%;
+    background-color: rgb(217, 201, 53);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    align-content: center;
+    /* padding-bottom: 10px; */
+}
+header > h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+header > p{
+    font-family: "Winky Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+nav{
+    position: sticky;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    padding: auto;
+    
+    background-color:rgb(15, 178, 190);
+    
+    padding: 8px 0px 8px 0px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+nav li{
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 1vw;
+    padding: 3px 5px;
+    /* background-color: white; */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav li:hover{
+    background-color: rgb(212, 211, 211);
+}
+nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+nav a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+
+
+
+.video-container {
+    position: relative;
+    width: 100%;           /* Full width of the page */
+    padding-bottom: 40%;   /* Adjust height (shorter than 16:9) */
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;   /* Rounded corners for elegance */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;           /* Fills the container width */
+    height: 100%;          /* Fills the container height */
+    border: none;
+}
+
+table{
+    width: 100%;
+    border: 2px solid black;
+    border-collapse: collapse;
+    /* margin: 5px; */
+}
+
+th{
+    padding: 10px;
+    background-color: rgb(242, 242, 242);
+    border: 2px solid black;
+}
+td{
+    padding: 5px;
+    text-align: center;
+    border: 2px solid black;
+}
+/* td a:link {
+    text-decoration: none;
+    color: darkgreen;
+} */
+
+td a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+/* td a:active {
+    color: red;
+} */
+
+tr:nth-child(even){
+    background-color: rgb(255, 255, 255);
+}
+tr:nth-of-type(odd){
+    background-color: rgb(255, 255, 255);
+}
+/* tr:after:hover{
+    cursor: pointer;
+} */
+tr:hover{
+    background-color: rgb(147, 219, 147);
+}
+
+.cardbox{
+    padding: 10px;
+    display: flex;
+    overflow: auto;
+    padding-top: 30px;
+}
+.card{
+    /* float: left; */
+    margin: 0 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+.card:hover{
+    border: 2px solid rgb(152, 151, 151);
+    background-color: rgb(241, 241, 241);
+    box-shadow: 1px 1px 8px gray;
+}
+.card>img{
+    height: 200px;
+    width: 250px;
+    box-sizing: border-box;
+}
+.card>img:hover{
+    opacity: 0.9;
+    border: 1px solid;
+}
+.textbox>h3{
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 5px;
+}
+.textbox > p{
+    text-align: justify;
+}
+
+.Tips {
+    margin: 30px 10px 0 15px;
+    padding: 10px;
+    background-color: white;
+    /* border-radius: 10px; */
+    border-left: 5px solid green;
+}
+.Tips ul{
+    padding: 10px;
+    font-size: large;
+    list-style: none;
+}
+.Tips li::before {
+    content: "✔ ";
+    color: green;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.gallery>p{
+    background-color: white;
+    text-align: center;
+    font-weight: bolder;
+    margin: auto;
+    margin-top: 30px;    
+    padding-top: 5px;
+    max-width: 800px;
+    box-sizing: border-box;
+}
+
+.image {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    border: 5px solid white;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: auto; 
+    display: block;
+    object-fit: contain; 
+}
+
+.text1 {
+        position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px black;
+}
+
+section iframe{
+    height: 400px;
+    width: 80%;
+    margin: 5% 10%;
+    border: 3px solid rgb(201, 216, 125) 2px ;
+    box-shadow: 0px 0px 10px gray;
+}
+
+footer{
+    height: 10vh;
+    width: 100vw;
+    font-size: 20px;
+    background-color: rgb(172, 120, 120);
+    text-align: center;
+    align-content: center;
+}
